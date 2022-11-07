@@ -16,6 +16,5 @@ git checkout ${branch_name}
 # git add -A
 # timestamp=$(date -u)
 git commit --allow-empty -m "Bot published ${GITHUB_SHA}" || exit 0
-git push origin HEAD
 git pull --rebase upstream ${branch_name}
 git push upstream ${branch_name}
