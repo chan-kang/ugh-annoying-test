@@ -16,7 +16,7 @@ jobs:
       - name: Cut release branch and push
         uses: CasperWA/push-protected@v2
         with:
-          token: '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'
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
       #   run: RELEASE_PREFIX=test bash release.sh
 
