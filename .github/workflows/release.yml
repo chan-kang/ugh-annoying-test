@@ -1,0 +1,18 @@
+name: release
+
+on:
+  push:
+  workflow_dispatch:
+  # Run at midnight on every friday
+  schedule:
+    - cron: "0 0 * * FRI"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cut release branch and push
+        run: RELEASE_PREFIX=test bash release.sh
+
