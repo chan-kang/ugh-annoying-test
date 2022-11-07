@@ -2,13 +2,12 @@ set -xe
 
 # token='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'
 branch_name='main'
-bot_name='chan-kang-no'
+bot_name='chan-kang'
 
 # REPO_REF="https://${bot_name}:${token}@github.com/${GITHUB_REPOSITORY}.git"
 # git config http.sslVerify false
 git config user.name "${bot_name}"
-# git config user.email "${bot_name}@users.noreply.github.com"
-git config user.email "${bot_name}@ihub.com"
+git config user.email "${bot_name}@users.noreply.github.com"
 
 # git remote add upstream "${REPO_REF}"
 # git branch --verbose
