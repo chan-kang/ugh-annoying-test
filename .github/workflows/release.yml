@@ -14,5 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Cut release branch and push
-        run: RELEASE_PREFIX=test bash release.sh
+        uses: CasperWA/push-protected@v2
+        with:
+          token: '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'
+          branch: protected
+      #   run: RELEASE_PREFIX=test bash release.sh
 
