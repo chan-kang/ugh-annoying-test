@@ -10,7 +10,6 @@ git config user.name "${bot_name}"
 # git config user.email "${bot_name}@users.noreply.github.com"
 git config user.email "${bot_name}@ihub.com"
 
-
 # git remote add upstream "${REPO_REF}"
 # git branch --verbose
 
