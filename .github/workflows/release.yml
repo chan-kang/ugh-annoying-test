@@ -17,6 +17,7 @@ jobs:
         run: |
             git config --global user.email "you@example.com"
             git config --global user.name "Your Name"
+            echo 'ok is this working'
             git commit --allow-empty -m "from the action yum"
       - name: Cut release branch and push
         uses: CasperWA/push-protected@v2
